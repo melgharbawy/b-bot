@@ -1,0 +1,45 @@
+{
+  "name": "laylo-csv-importer",
+  "version": "1.0.0",
+  "description": "Automated CSV import tool for Laylo subscriber management via GraphQL API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "node src/index.js validate",
+    "import": "node src/index.js import",
+    "dry-run": "node src/index.js import --dry-run",
+    "status": "node src/index.js status",
+    "resume": "node src/index.js resume",
+    "help": "node src/index.js help"
+  },
+  "keywords": [
+    "laylo",
+    "csv",
+    "import",
+    "automation",
+    "graphql",
+    "subscriber"
+  ],
+  "author": "Developer",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chalk": "^4.1.2",
+    "commander": "^14.0.0",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "inquirer": "^8.2.6",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
